@@ -11,7 +11,7 @@ const filterOutOdds = (...nums) => nums.filter((num) => num % 2 === 0);
 const findMin = (...nums) => nums.reduce((min, current) => current < min ? current : min);
 
 //mergeObjects  ????
-const mergeObjects = (obj1, obj2) => obj1.reduce((acc, val ) => ({val, ...acc}),obj2);
+const mergeObjects = (obj1, obj2) => ({...obj1, ...obj2});
 //mergeObjects({a:1,b:2}, {c:3, d:4})
 
 //doubleAndReturnArgs
